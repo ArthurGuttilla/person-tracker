@@ -61,9 +61,11 @@ export default function AdminPage() {
   async function loadUsers() {
     setLoading(true);
     const { data } = await authClient.admin.listUsers({
-      limit: 100,
-      sortBy: "createdAt",
-      sortDirection: "desc",
+      query: {
+        limit: 100,
+        sortBy: "createdAt",
+        sortDirection: "desc",
+      },
     });
     if (data) {
       setUsers(data.users as User[]);
