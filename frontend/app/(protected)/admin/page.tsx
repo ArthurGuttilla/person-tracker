@@ -30,7 +30,7 @@ interface User {
   email: string;
   role: string;
   banned: boolean;
-  createdAt: string;
+  createdAt: Date;
 }
 
 export default function AdminPage() {
