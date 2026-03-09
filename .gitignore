@@ -40,3 +40,4 @@ next-env.d.ts
 
 # lock files (keep bun.lock only)
 package-lock.json
+yarn.lock
